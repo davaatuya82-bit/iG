@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ====== ЭНД ӨӨРИЙН НЭРЭЭ БИЧНЭ ====== -->
+  <title>Миний нэр · Instagram</title>
+  <meta name="description" content="Миний тухай товч тайлбар" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <!-- Профайл зураг: content/ хавтаст зургаа хийгээд доорх замыг солино -->
+    <img class="avatar" src="https://placehold.co/200x200/8b5cf6/ffffff?text=Зураг" alt="Профайл зураг" />
+
+    <!-- ====== НЭР, ТАЙЛБАР ====== -->
+    <h1 class="name">Миний Нэр</h1>
+    <p class="bio">Энд өөрийнхөө тухай 1-2 өгүүлбэр бичнэ. Жишээ: Контент бүтээгч · Аялал · Гэрэл зураг 📸</p>
+
+    <!-- ====== ХОЛБООСУУД ======
+         Шинэ холбоос нэмэхдээ нэг <a> блокийг хуулж аваад
+         href="#" дотор хаягаа, текстийг нь солино. -->
+    <nav class="links">
+      <a class="link" href="https://instagram.com/" target="_blank" rel="noopener">📷 Instagram</a>
+      <a class="link" href="#" target="_blank" rel="noopener">📺 YouTube</a>
+      <a class="link" href="#" target="_blank" rel="noopener">🎵 TikTok</a>
+      <a class="link" href="#" target="_blank" rel="noopener">✉️ Холбоо барих</a>
+    </nav>
+
+    <footer class="foot">© <span id="year"></span> Миний Нэр</footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

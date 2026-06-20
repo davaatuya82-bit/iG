@@ -1,0 +1,83 @@
+/* ====== ӨНГӨ СОЛИХ: доорх 2 утгыг л солиод бүх загвар өөрчлөгдөнө ====== */
+:root {
+  --brand: #8b5cf6;        /* үндсэн өнгө (нил ягаан) */
+  --brand-dark: #6d28d9;   /* бараан хувилбар */
+  --bg1: #1e1b4b;
+  --bg2: #4c1d95;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.7);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(160deg, var(--bg1), var(--bg2));
+  color: var(--text);
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  padding: 40px 28px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--brand);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.name {
+  margin-top: 18px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.bio {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.links {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link {
+  display: block;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.link:hover {
+  transform: translateY(-2px);
+  background: var(--brand);
+  border-color: var(--brand-dark);
+}
+
+.foot {
+  margin-top: 32px;
+  font-size: 13px;
+  color: var(--muted);
+}

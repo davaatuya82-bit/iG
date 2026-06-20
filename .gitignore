@@ -1,0 +1,6 @@
+# Node (зураг авах хэрэгслийн түр файлууд)
+node_modules/
+package.json
+package-lock.json
+shot.js
+website-preview.png

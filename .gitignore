@@ -4,3 +4,6 @@ package.json
 package-lock.json
 shot.js
 website-preview.png
+
+# Татаж авсан фонтууд
+.fonts/

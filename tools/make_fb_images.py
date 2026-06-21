@@ -114,7 +114,7 @@ def make_cover():
     draw_lotus(img, w // 2, int(h * 0.50), scale=0.95, alpha=210)
     font = fit_font(TEXT, SCRIPT_FONT, int(w * 0.7), start=150)
     draw_text_center(img, TEXT, font, w // 2, int(h * 0.78), (255, 248, 235, 255))
-    img.convert("RGB").save("content/fb-cover.jpg", quality=92)
+    img.convert("RGB").save("images/fb-cover.jpg", quality=92)
     print("cover saved")
 
 
@@ -126,7 +126,7 @@ def make_profile():
     draw_lotus(img, w // 2, int(h * 0.46), scale=1.25, alpha=230)
     font = fit_font(TEXT, SCRIPT_FONT, int(w * 0.82), start=180)
     draw_text_center(img, TEXT, font, w // 2, int(h * 0.80), (255, 248, 235, 255))
-    img.convert("RGB").save("content/fb-profile.jpg", quality=92)
+    img.convert("RGB").save("images/fb-profile.jpg", quality=92)
     print("profile saved")
 
 

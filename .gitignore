@@ -7,3 +7,6 @@ website-preview.png
 
 # Татаж авсан фонтууд
 .fonts/
+
+# Локал тохиргоо
+.claude/settings.local.json
